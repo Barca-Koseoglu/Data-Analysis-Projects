@@ -1,5 +1,7 @@
 # Chicago Transit Authority (CTA) Rail Ridership Analysis
 
+<img width="1778" height="1002" alt="image" src="https://github.com/user-attachments/assets/4866599e-61ff-4a21-b890-9fe692ad43be" />
+
 ## Project Overview
 
 This file contains the raw Chicago Transit Authority (CTA) rail ridership data and a comprehensive analysis focusing on the long-term impact of the COVID-19 pandemic and the subsequent recovery. The analysis is presented via an interactive Power BI dashboard (`CTA_Ridership_Dashboard.pbix`).
@@ -28,9 +30,10 @@ Following the nadir of 2020, the system has demonstrated a strong rebound toward
 
 ## Data Sources and Structure
 
-### Source
+### Source 
 * **Original Provider:** Chicago Transit Authority (CTA) via the City of Chicago Open Data Portal.
 * **Time Period Covered:** 2001 through 2024 (Although there was 2025 data, I didn't inlude it in the calculations due to the fact that there were abstract trends.)
+* **Links (since the files are too large to upload here):** [CTA Ridership: L Station Entries - Daily Totals](https://data.cityofchicago.org/Transportation/CTA-Ridership-L-Station-Entries-Daily-Totals/5neh-572f/about_data), [CTA System Information: List of 'L' Stops](https://data.cityofchicago.org/Transportation/CTA-System-Information-List-of-L-Stops/8pix-ypme/about_data)
 
 ### Data Model and Files
 The analysis utilizes two tables connected via a one-to-many relationship (`stations[station_id]` to `ridership[station_id]`):
@@ -44,7 +47,6 @@ The analysis utilizes two tables connected via a one-to-many relationship (`stat
     * `latitude`/`longitude`: Coordinates for mapping.
 
 ### Files in this Repository
-* `CTA_Ridership_Data.csv`: The primary raw dataset used for this analysis.
 * `CTA_Ridership_Dashboard.pbix`: The Power BI project file containing the data model, DAX measures, Power Query transformations, and final visualizations.
 
 ---
